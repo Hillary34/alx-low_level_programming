@@ -1,1 +1,1 @@
-a script that generates assembly code from c code and save it
+a script that compiles a c file and creates an executable file cisfun
