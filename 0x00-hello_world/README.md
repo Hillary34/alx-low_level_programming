@@ -1,1 +1,1 @@
- script hat runs a c file through a preprocessor
+script that compiles a c file but does not link
