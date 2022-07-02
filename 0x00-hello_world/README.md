@@ -1,1 +1,1 @@
-how to use puts command
+how to print to the output using printf
