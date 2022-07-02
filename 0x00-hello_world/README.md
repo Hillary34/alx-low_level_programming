@@ -1,1 +1,1 @@
-a script that generates a assembly code and save it in a cfile
+ a c program to display a text
