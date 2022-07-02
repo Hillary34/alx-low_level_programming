@@ -1,1 +1,1 @@
-script that prints out a text
+how to use puts command
