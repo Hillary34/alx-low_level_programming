@@ -1,13 +1,9 @@
 #!/bin/bash
 #include <stdio.h>
-#include <string.h>
-/**
-* main - Entry point
-* Return: Always 0 (sucess)
-*/
-int main(void)
+int main()
 {
-char items[] = "\"Programming is like building a multilingual puzzle";
+// string initialisation
+char items[] = "Programming is like building a multilingual puzzle";
 puts(items);
-return (0);
+return 0;
 }
