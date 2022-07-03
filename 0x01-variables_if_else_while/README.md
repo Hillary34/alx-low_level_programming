@@ -1,1 +1,1 @@
-program that print all possible combinations of single-digit numbers
+program that prints all possible difference combinations of two digits
