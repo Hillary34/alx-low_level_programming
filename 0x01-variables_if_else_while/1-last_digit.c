@@ -4,8 +4,7 @@
 /**
 * main - Entry point
 * Return: Always 0 (Success)
-int main(void)
-[A[A[B[D[*/
+*/
 int main(void)
 {
 int n;
