@@ -2,15 +2,17 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* ain - Entry point
-* Return: Always 0 (Success)
+*main - Entry point
+*Return: Always 0 (Success)
 */
-int main(void)
+int main(void)[A[A[A[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Cm[D	[D[D[D[D[D[D[D	[D[D[D[D[D[D[D
+[A
+[A* main - Entry point[B[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D Return: Always 0 (Success)[B[B[B[B[A[A[D[D[D[D[D[D[D[D[D[D[D[D[D[D
 {
 char low;
 for (low = 'a'; low <= 'z'; low++)
 putchar(low);
 putchar('\n');
-return (0);
+return
+[A[C[C[C[C[C[C[C(0);
 }
-[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[C[C[B[B[B[Bmain - Entry point[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B
