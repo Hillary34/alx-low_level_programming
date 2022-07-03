@@ -1,4 +1,3 @@
-$ cat > 2-print_alphabet.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
