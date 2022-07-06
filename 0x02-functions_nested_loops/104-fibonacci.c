@@ -1,26 +1,43 @@
 #include <stdio.h>
 /**
-* main - Entry point
-* Description: program that finds and prints the first 98 Fibonacci numbers, starting with 1 and 2
-* Return: Always 0 successful
+* main - Print the first 98 Fibonacci numbers, starting with 1and 2
+*Return: Always 0 (Success)
 */
 int main(void)
 {
-unsigned long int t0 = 0, t1 = 1, s;
-int i;
-for (i = 1; i<= 98; i++)
+int count;
+unsigned long fib1 = 0, fib2 = 1, sum;
+
+[Aunsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
+unsigned long half1, half2;
+for (count = 0; count < 92; count++)
 {
-s = t0 + t1;
-if (i != 98)
+sum = fib1 + fib2;
+printf("%lu, ", sum);
+fib1 = fib2;
+fib2 = sum;
+}
+fib1_half1 = fib1 / 10000000000;
+fib2_half1 = fib2 / 10000000000;
+fib1_half2 = fib1 % 10000000000;
+fib2_half2 = fib2 % 10000000000;
+for (count = 93; count < 99; count++)
 {
-printf("%lu, ", s);
-}
-els
+half1 = fib1_half1 + fib2_half1;
+half2 = fib1_half2 + fib2_half2;
+if (fib1_half2 +fib2_half2 > 9999999999)
 {
-printf("%lu\n", s);
+half1 += 1;
+half2 %= 10000000000;
 }
-t0 = t1;
-t1 = s;
+printf("%lu%lu", half1, half2);
+if (count != 98)
+printf(",");
+fib1_half = fib2_half1;
+fib1_half2 = [A[D[D[D[D1 = fib2_half1;[B[D[D[D[D[D[D[D[D[D[D[D[D[B[B[A[A[C[C[Dfib2_half2;
+fib2_half1 = half1;
+fib2_half2 = half2;
 }
+printf("\n");
 return (0);
 }
