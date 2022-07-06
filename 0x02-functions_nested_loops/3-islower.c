@@ -1,18 +1,19 @@
 #include "main.h"
 /**
-* print_alphabet_x10 - Check holberton
+* _islower - Check description
+* @c: The character to be checked.
 * Description: function uses _putchar function to print
 * alphabet in lowercase 10 times
-* Return: Nothing.
+* Return: 1 if is lowercase or 0 if is uppercase
 */
-void print_alphabet_x10(void)
+int _islower(int c)
 {
 char i;
-int j;
-for (j = 0; j < 10; j++)
-{
+int lower = 0;
 for (i = 'a'; i <= 'z'; i++)
-_putchar(i);
-_putchar('\n');
+{
+if (i == c)
+lower = 1;
 }
+return (lower);
 }
