@@ -7,8 +7,7 @@ int main(void)
 {
 int count;
 unsigned long fib1 = 0, fib2 = 1, sum;
-
-[Aunsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
+unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
 unsigned long half1, half2;
 for (count = 0; count < 92; count++)
 {
@@ -33,8 +32,8 @@ half2 %= 10000000000;
 printf("%lu%lu", half1, half2);
 if (count != 98)
 printf(",");
-fib1_half = fib2_half1;
-fib1_half2 = [A[D[D[D[D1 = fib2_half1;[B[D[D[D[D[D[D[D[D[D[D[D[D[B[B[A[A[C[C[Dfib2_half2;
+fib1_half1 = fib2_half1;
+fib1_half2 = fib2_half2;
 fib2_half1 = half1;
 fib2_half2 = half2;
 }
