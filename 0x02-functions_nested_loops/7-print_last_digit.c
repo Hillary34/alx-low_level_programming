@@ -1,7 +1,6 @@
 #include "main.h"
 /**
 * main - check the code for description.
-*
 * Return: Always 0.
 */
 int main(void)
