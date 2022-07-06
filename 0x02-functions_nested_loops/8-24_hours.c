@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* jack_bauer - Check Description.
-* Description: function prints every minute of the day of Jack Bauer. 
+* jack_bauer - Check Description
+* Description: function prints every minute in one day
 * Return: Nothing
 */
 void jack_bauer(void)
