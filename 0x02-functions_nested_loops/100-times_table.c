@@ -1,38 +1,20 @@
-#include "main.h"
+#include <stdio.h>
 /**
-* print_times_table - prints times table for numbers from 0-14
-* @n: An input integer value
-* Return: Nothing
+* print_to_98 - Prints all natural numbers from input to 98 in order seperated b* y a comma followed by a space.
+* @n: The number to begin counting at.
 */
-void print_times_table(int n)
+void print_to_98(int n)
 {
-int i, j;
-if (n > 0 && n < 15)
+if (n >= 98)
 {
-for (i = 0; i <= n; i++)
-{
-_putchar('0');
-for (j = 1; j <= n; j++)
-{
-_putchar(',');
-_putchar(' ');
-prod = i * j;
-if (prod <= 99)
-_putchar(' ');
-if (prod <= p)
-_putchar(' ');
-if (prod >= 100)
-{
-_putchar((prod / 100) + '0');
-_putchar(((prod / 10)) % 10 + '0');
+while (n > 98)
+printf("%d,", n--);
+printf("%d\n", n);
 }
-else if (prod <= 99 && prod >= 10)
-{
-_putchar((prod / 10) + '0');
-}
-_putchar((prod % 10) + '0');
-}
-_putchar('\n');
-}
+else
+[
+while (n <[A[D[D[D[D[D[D[D[D[D[D[{[B[C[C[C[C[C[C[C[C[C[C[C[D[D[C98)
+printf("%d,", n++);
+printf("%d\n", n);
 }
 }
