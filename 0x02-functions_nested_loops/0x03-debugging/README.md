@@ -1,1 +1,1 @@
-debugging 0-main.c
+debugging a code
