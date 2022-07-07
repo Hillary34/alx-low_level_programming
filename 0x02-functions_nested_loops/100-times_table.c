@@ -1,20 +1,18 @@
-[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B#include <stdio.h>
+#include "main.h"
 /**
-* print_to_98 - Prints all natural numbers from input to 98 in order seperated b* y a comma followed by a space.
-* @n: The number to begin counting at.
+* main - check the code.
+* print_times_table - prints times table for numbers from 0-14
+* @n: An input integer value
+* Return: Always 0.
 */
-void print_to_98(int n)
+void print_times_table(int n)
 {
-if (n >= 98)
-{
-while (n > 98)
-printf("%d,", n--);
-printf("%d\n", n);
-}
-else
-{
-while (n < 98)
-printf("%d,", n++);
-printf("%d\n", n);
-}
+print_times_table(3);
+_putchar('\n');
+print_times_table(5);
+_putchar('\n');
+print_times_table(98);
+_putchar('\n');
+print_times_table(12);  
+return (0);
 }
