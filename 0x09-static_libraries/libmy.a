@@ -21,6 +21,6 @@ ar -t libmy.a
 6-abs.o
 9-strcpy.o
 \_putchar.o
-ranlib libholberton.a
+ranlib libmy.a
 creat a main.c file
-gcc main.c -L. -lya -o quote
+gcc main.c -L. -lmy -o quote
