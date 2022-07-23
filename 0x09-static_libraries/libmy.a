@@ -20,7 +20,7 @@ ar -t libmy.a
 5-strstr.o6-abs.o
 6-abs.o
 9-strcpy.o
-\_putchar.o
+_putchar.o
 ranlib libmy.a
 creat a main.c file
 gcc main.c -L. -lmy -o quote
