@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h
+#include <stdlib.h>
 /**
 * argstostr -  concatenates all the arguments of your program
 * @ac: grid to free the previous
