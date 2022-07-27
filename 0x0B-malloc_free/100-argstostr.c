@@ -1,38 +1,36 @@
 #include "main.h"
-#include <stdlib.h>
 /**
-* argstostr - A function that concatenates all arguments of your program
-* @ac: number of arguments
-* @av: array containing arguments
-* Return: A pointer to string that containing all arguments
-* or NULL if ac == 0, if av == NULL, or upon failure
+* argstostr -  concatenates all the arguments of your program
+* @ac: grid to free the previous
+* @av: height of grid
+* Return: pointer to a new string, or NULL if it fails
 */
 char *argstostr(int ac, char **av)
 {
-char *new_str;
-int len = 0, i = 0, j, k = 0;
+int i, j, k = 0, n = 0;
+char *s;
 if (ac <= 0 || av == NULL)
 return (NULL);
-for (; i < ac; i++)
+for (i = 0; i < ac ; i++)
 {
 for (j = 0; av[i][j]; j++)
-len++;
-len++;
+n++;
+n++;
 }
-len++;
-new_str = malloc(len * sizeof(char));
-if (new_str == NULL)
+n++;
+s = malloc(n * sizeof(char));
+if (s == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
 {
 for (j = 0; av[i][j]; j++)
 {
-new_str[k] = av[i][j];
+s[k] = av[i][j];
 k++;
 }
-new_str[k] = '\n';
+s[k] = '\n';
 k++;
 }
-new_str[k] = '\0';
-return (new_str);
+s[k] = '\0';
+return (s);
 }
