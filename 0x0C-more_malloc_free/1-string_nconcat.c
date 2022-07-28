@@ -30,6 +30,7 @@ if (i < lens1)
 new_str[i] = *s1, s1++;
 else
 new_str[i] = *s2, s2++;
+}
 new_str[i] = '\0';
 return (new_str);
 }
