@@ -1,26 +1,23 @@
-#include "holberton.h"
+less [A[A[A[A[B[#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
-
 /**
- * _calloc - A function that allocates memory for an array using malloc
- * @nmemb: number of memory spaces
- * @size: size of nmemb
- * Return: returns pointer to allocated space, or NULL on failure
- */
-void *_calloc(unsigned int nmemb, unsigned int size)
+* array_range - A function that creates an array of integers
+* @min: min number to start
+* @max: max number to start
+* Return: pointer
+*/
+int *array_range(int min, int max)
 {
-	unsigned int i = 0;
-	char *space;
-
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-
-	space = malloc(nmemb * size);
-	if (space == NULL)
-		return (NULL);
-
-	for (; i < nmemb * size; i++)
-		*(space + i) = 0;
-
-	return (space);
+int *new_array;
+int diff, i;
+if (min > max)
+return (NULL);
+diff = max - min;
+new_array = malloc((diff + 1) * sizeof(int));
+if (new_array == NULL)
+return (NULL);
+for (i = 0; i <= diff; i++)
+new_array[i] = min++;
+return (new_array);
 }
