@@ -1,12 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
 * main - Check the code
 * @argc: number of arguments
 * @argv: arguments
- * Return: Nothing
+* Return: Nothing
 */
 int main(int argc, char **argv)
 {
