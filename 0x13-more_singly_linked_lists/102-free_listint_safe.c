@@ -1,40 +1,57 @@
-#include <stdio.h>
 #include "lists.h"
-#include <stdlib.h>
 /**
-* free_listint_safe - A function that frees a list
-* @h: A pointer listint_t structure
-* Return: The size of the list that was free'd
+* free_listp - frees a linked list
+* @head: head of a list.
+* Return: no return.
 */
-size_t free_listint_safe(listint_t **h)
+void free_listp(listp_t **head)
 {
-size_t counter = 0;
-listint_t *temp;
-temp = *h;
-while (temp)
+listp_t *temp;
+listp_t *curr;
+if (head != NULL)
 {
-temp = *h;
-temp = temp->next;
-free_list(temp);
-counter++;
-}
-*h = NULL;
-return (counter);
-}
-/**
-* free_list - A function that frees a listint_t recursively
-* @head: A pointer to the listint_t structure
-* Return: Nothing
-*/
-void free_list(listint_t *head)
+curr = *head;
+while ((temp = curr) != NULL)
 {
-listint_t *temp;
-if (head)
-{
-temp = head;
-temp = temp->next;
+curr = curr->next;
 free(temp);
-free_list(temp);
 }
-free(head);
+*head = NULL;
+}
+}
+/**
+* print_listint_safe - prints a linked list.
+* @head: head of a list.
+* Return: number of nodes in the list.
+*/
+size_t print_listint_safe(const listint_t *head)
+{
+size_t nnodes = 0;
+listp_t *hptr, *new, *add;
+hptr = NULL;
+while (head != NULL)
+{
+new = malloc(sizeof(listp_t));
+if (new == NULL)
+exit(98);
+new->p = (void *)head;
+new->next = hptr;
+hptr = new;
+add = hptr;
+while (add->next != NULL)
+{
+add = add->next;
+if (head == add->p)
+{
+printf("-> [%p] %d\n", (void *)head, head->n);
+free_listp(&hptr);
+return (nnodes);
+}
+}
+printf("[%p] %d\n", (void *)head, head->n);
+head = head->next;
+nnodes++;
+}
+free_listp(&hptr);
+return (nnodes);
 }
