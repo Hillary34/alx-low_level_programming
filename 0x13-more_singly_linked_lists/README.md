@@ -1,1 +1,1 @@
-a function that prints a listint_t linked list
+a function that frees a listint_t list
